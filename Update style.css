@@ -1,9 +1,9 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background: #f9f9f9;
+  color: #333;
   text-align: center;
 }
 
@@ -17,47 +17,67 @@ nav a {
   text-decoration: none;
   margin: 0 20px;
   font-size: 18px;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #d4ffd4;
 }
 
-h1 {
-  margin-top: 50px;
-  font-size: 36px;
-  color: #222;
+section {
+  padding: 60px 20px;
+}
+
+.about-hero, .contact-hero {
+  background: #e0f7fa;
+}
+
+.mission-section {
+  background: #f1f8e9;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
 }
 
 p {
   font-size: 18px;
-  margin-top: 20px;
-  color: #555;
+  line-height: 1.6;
 }
 
-form {
-  margin-top: 30px;
-}
-
-input, textarea {
-  width: 80%;
+.contact-form {
+  margin: 20px auto;
   max-width: 400px;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  text-align: left;
 }
 
-button {
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
   background-color: #4caf50;
   color: white;
-  padding: 12px 24px;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  border-radius: 5px;
   font-size: 16px;
+  cursor: pointer;
 }
 
-button:hover {
+.contact-form button:hover {
   background-color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
 }
