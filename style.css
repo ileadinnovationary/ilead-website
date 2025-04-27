@@ -1,56 +1,57 @@
 /* style.css */
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 header {
-  background-color: #0056b3;
-  color: white;
-  padding: 20px;
-  text-align: center;
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
 nav ul {
-  list-style: none; /* Remove bullets */
-  display: flex;    /* Make items horizontal */
-  justify-content: flex-end; /* Push menu to the right */
-  margin: 0;
-  padding: 0;
+    list-style: none; /* Remove bullets */
+    display: flex; /* Make items horizontal */
+    justify-content: flex-end; /* Push menu to the right */
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-  margin-left: 20px; /* Space between links */
+    margin-left: 20px; /* Space between links */
 }
-  text-decoration: underline;
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 main {
-  padding: 40px 20px;
+    padding: 40px 20px;
 }
 
 section {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 footer {
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
