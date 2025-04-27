@@ -23,6 +23,17 @@ nav a {
 }
 
 nav a:hover {
+nav ul {
+  list-style: none; /* Remove bullets */
+  display: flex;    /* Make items horizontal */
+  justify-content: flex-end; /* Push menu to the right */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px; /* Space between links */
+}
   text-decoration: underline;
 }
 
