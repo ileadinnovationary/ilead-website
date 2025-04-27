@@ -4,40 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iLEAD Innovationary</title>
-  <link rel="stylesheet" href="style.css"> <!-- Important -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">iLEAD</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <header class="hero">
-    <h1>Empowering the Future, One Vision at a Time</h1>
-    <p>Unlock your potential with iLEAD.</p>
+  <header>
+    <div class="container">
+      <h1>iLEAD Innovationary</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="about">
-    <h2>Welcome to iLEAD Innovationary</h2>
-    <p>We are building the future, one idea at a time.</p>
+  <section id="hero">
+    <div class="container">
+      <h2>Empowering the Future, One Vision at a Time</h2>
+      <p>Unlock your potential with iLEAD. Innovate, Inspire, Impact.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
   </section>
 
-  <section class="contact">
-    <h2>Get in Touch</h2>
-    <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At iLEAD Innovationary, we foster creativity and leadership to bring groundbreaking ideas to life. We believe in building the future, one idea at a time.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 iLEAD Innovationary. All rights reserved.</p>
+    <div class="container">
+      <p>© 2025 iLEAD Innovationary. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
