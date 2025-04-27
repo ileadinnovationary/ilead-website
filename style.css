@@ -1,57 +1,121 @@
-/* style.css */
+/* Fresh, Modern, and Colorful Style */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-header {
-    background-color: #0056b3;
-    color: white;
-    padding: 20px;
-    text-align: center;
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+nav {
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
 }
 
 nav ul {
-    list-style: none; /* Remove bullets */
-    display: flex; /* Make items horizontal */
-    justify-content: flex-end; /* Push menu to the right */
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
 }
 
 nav ul li {
-    margin-left: 20px; /* Space between links */
+  margin-left: 20px;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+  color: #ffd166;
 }
 
-main {
-    padding: 40px 20px;
+header {
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.2rem;
 }
 
 section {
-    margin-bottom: 40px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact-form button {
+  background: #4e54c8;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #8f94fb;
 }
 
 footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
 }
