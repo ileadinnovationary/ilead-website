@@ -202,4 +202,26 @@ button {
 button:hover {
   background-color: #4f46e5;
 }
-  
+ /****** your existing styles for nav etc... ******/
+
+/* Now add the new hero section styling */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9fafb;
+  color: #1f2937;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+ 
