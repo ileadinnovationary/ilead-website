@@ -3,56 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - LEAD Innovatory Workforce</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    .banner {
-      background-color: #0056a6;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    .contact-button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      background-color: white;
-      color: #0056a6;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    .contact-button:hover {
-      background-color: #003d80;
-      color: white;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 14px;
-    }
-  </style>
+  <title>Contact - LEAD Innovatory Workforce</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Blue Banner Section -->
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Banner Section -->
   <section class="banner">
     <h1>Let's Build Your Future Together</h1>
-    <a href="contact.html" class="contact-button">📞 Contact Us</a> <!-- Contact Us Button with Icon -->
+    <a href="#contact-form" class="contact-button">📞 Contact Us</a>
+  </section>
+
+  <!-- (Optional) Contact Form Placeholder -->
+  <section id="contact-form" style="text-align: center; padding: 50px 20px;">
+    <h2>Contact Us</h2>
+    <p>Coming Soon...</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 LEAD Innovatory Workforce. Powered by AXA.
+    &copy; <span id="year"></span> LEAD Innovatory Workforce. Powered by AXA.
   </footer>
+
+  <!-- Auto Year Script -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
-
 
