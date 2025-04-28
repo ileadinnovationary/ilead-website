@@ -107,4 +107,22 @@ footer {
     }
 }
 
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+}
 
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px;
+    font-size: 18px;
+}
