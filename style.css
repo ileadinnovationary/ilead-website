@@ -1,77 +1,106 @@
-/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
-color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-h1, h2 {
-color: #0056b3;
+.header {
+    background: #004aad;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Navigation Bar */
-nav {
-position: fixed;
-top: 0;
-width: 100%;
-background-color: #0056b3;
-padding: 10px 20px;
-z-index: 1000;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
 }
 
-nav a {
-color: white;
-margin-right: 15px;
-text-decoration: none;
-font-size: 18px;
+.navbar ul {
+    list-style: none;
+    display: flex;
 }
 
-nav a:hover {
-text-decoration: underline;
+.navbar ul li {
+    margin-left: 20px;
 }
 
-/* Hero Section */
-header {
-padding: 100px 20px;
-text-align: center;
-background-color: #0056b3;
-color: white;
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-header h1 {
-font-size: 2.5em;
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    text-decoration: underline;
 }
 
-header p {
-font-size: 1.2em;
+.hero {
+    background: url('https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?fit=crop&w=1350&q=80') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
 }
 
-/* Section Styles */
-section {
-padding: 50px 20px;
-margin-top: 50px;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-section ul {
-list-style-type: none;
-padding: 0;
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
-section ul li {
-margin: 10px 0;
-font-size: 1.1em;
+.btn {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-/* Footer */
-footer {
-text-align: center;
-background-color: #0056b3;
-color: white;
-padding: 10px 0;
-position: fixed;
-bottom: 0;
-width: 100%;
+.btn:hover {
+    background: #e65c00;
+}
+
+.about {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
