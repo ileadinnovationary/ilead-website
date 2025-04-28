@@ -250,4 +250,9 @@ button:hover {
   margin-bottom: 10px;
   color: white; /* make it white if you want better contrast */
 }
+.hero h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
