@@ -1,124 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iLEAD Innovatory Workforce</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f7fa;
-      color: #333;
-    }
 
-    header {
-      background: #005baa;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
+/* Reset and Base Styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
 
-    nav {
-      background: #6c5ce7;
-      display: flex;
-      justify-content: center;
-    }
+body {
+background: linear-gradient(135deg, #e0eafc, #cfdef3);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 15px 20px;
-      font-weight: bold;
-      margin: 0 10px;
-    }
+/* Navigation */
+nav {
+background: linear-gradient(to right, #34d399, #6366f1);
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 7rem;
+padding: 1rem;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
 
-    nav a:hover {
-      background: #4834d4;
-    }
+nav a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+}
 
-    section {
-      display: none;
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 40px auto;
-      animation: fadeIn 0.5s ease-in-out;
-    }
+nav a:hover {
+color: #fffb73;
+text-decoration: underline;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+/* Hero Banner */
+.banner {
+background-color: #0056a6;
+color: white;
+text-align: center;
+padding: 100px 20px;
+animation: fadeIn 1.5s ease-out forwards;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #333;
-      color: white;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
+.banner h1 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
 
-  <header>
-    <h1>iLEAD Innovatory Workforce</h1>
-    <p>An AXA Business Unit</p>
-  </header>
+/* Button */
+.contact-button {
+display: inline-block;
+margin-top: 30px;
+padding: 15px 30px;
+background-color: white;
+color: #0056a6;
+font-weight: bold;
+text-decoration: none;
+border-radius: 8px;
+transition: background-color 0.3s, color 0.3s;
+}
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+.contact-button:hover {
+background-color: #003d80;
+color: white;
+}
 
-  <section id="home" style="display: block;">
-    <h1>Welcome to iLEAD Innovatory Workforce</h1>
-    <p>Your trusted partner in financial planning and workforce innovation.</p>
-  </section>
+/* Footer */
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px 0;
+font-size: 0.9rem;
+margin-top: auto;
+}
 
-  <section id="about">
-    <h1>About Us</h1>
-    <p>
-      At iLead Innovatory Workforce, we specialize in innovative workforce development and financial services.
-      Led by Gerry Orgasan Jr, our mission is to empower individuals and businesses with tailored financial strategies
-      and innovation-focused solutions.
-    </p>
-  </section>
+/* Animations */
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
 
-  <section id="contact">
-    <h1>Contact Us</h1>
-    <p>
-      Email: ileadinnovatory@gmail.com<br>
-      Phone: +63 981 558 2873<br>
-      Facebook: Gerry Orgasan Jr<br>
-      LinkedIn: German Jr Orgasan
-    </p>
-  </section>
 
-  <footer>
-    &copy; 2025 iLead Innovatory Workforce. Powered by AXA.
-  </footer>
-
-  <script>
-    const links = document.querySelectorAll('nav a');
-    const sections = document.querySelectorAll('section');
-
-    links.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
-
-        sections.forEach(section => {
-          section.style.display = 'none';
-        });
-
-        document.getElementById(targetId).style.display = 'block';
-      });
-    });
-  </script>
-
-</body>
-</html>
 
