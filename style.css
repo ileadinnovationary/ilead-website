@@ -54,14 +54,14 @@ nav {
   nav {
   ...
   justify-content: center;
-  gap: 2rem; /* add spacing between Home, About, Contact */
+  gap: 7rem; /* add spacing between Home, About, Contact */
 }
  align-items: center;
 }
 nav .logo {
-  font-size: 1.0rem;
-  font-weight: bold;
-  color: #fff;
+ nav a {
+  font-size: 18px; /* or 20px if you want it even bigger */
+  font-weight: bold; /* (optional) keeps the bold look */
 }
 nav ul {
   list-style: none;
