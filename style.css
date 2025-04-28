@@ -208,6 +208,14 @@ button:hover {
 .hero {
   text-align: center;
   padding: 80px 20px;
+  background: #f9fafb; /* Light background */
+  color: #1f2937; /* Darker text */
+  font-family: 'Arial', sans-serif;
+  max-width: 800px; /* Control the width */
+  margin: 0 auto; /* Center the section */
+}
+ text-align: center;
+  padding: 80px 20px;
   background: #f9fafb;
   color: #1f2937;
   font-family: 'Arial', sans-serif;
