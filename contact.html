@@ -1,80 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Us</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f2f5f7;
-    }
-    .blue-banner {
-      background-color: #0056a4;
-      color: white;
-      text-align: center;
-      padding: 50px 20px 20px 20px;
-    }
-    .contact-form {
-      background-color: #0056a4;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .contact-form form {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-    }
-    .contact-form button {
-      background-color: #ffffff;
-      color: #0056a4;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .footer {
-      background-color: #333;
-      color: #ccc;
-      text-align: center;
-      padding: 10px;
-      font-size: 12px;
-    }
-  </style>
-</head>
-<body>
+<!-- Blue Banner Section -->
+<section style="background-color: #0056a6; color: white; padding: 60px 20px; text-align: center;">
+  <h2 style="font-size: 32px; font-weight: bold;">Let's Build Your Future Together</h2>
+</section>
 
-  <!-- Blue Banner -->
-  <div class="blue-banner">
-    <h1>Let's Build Your Future Together</h1>
-  </div>
-
-  <!-- Contact Us Form inside Blue Section -->
-  <div class="contact-form">
-    <h2>Contact Us</h2>
-    <p>Ready to take the next step? Let's connect.</p>
+<!-- Contact Us Form Section -->
+<section style="background-color: #0056a6; padding: 60px 20px;">
+  <div style="max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 10px; color: black;">
+    <h2 style="text-align: center;">Contact Us</h2>
+    <p style="text-align: center;">Ready to take the next step? Let's connect.</p>
     <form>
-      <input type="text" name="fullname" placeholder="Full Name" required><br>
-      <input type="email" name="email" placeholder="Email Address" required><br>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
-      <button type="submit">Send Message</button>
+      <div style="margin-bottom: 20px;">
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="name" style="width: 100%; padding: 10px; margin-top: 5px;">
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email" style="width: 100%; padding: 10px; margin-top: 5px;">
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label for="message">Your Message</label><br>
+        <textarea id="message" name="message" rows="5" style="width: 100%; padding: 10px; margin-top: 5px;"></textarea>
+      </div>
+      <div style="text-align: center;">
+        <button type="submit" style="background-color: #0056a6; color: white; padding: 12px 30px; border: none; border-radius: 5px; cursor: pointer;">
+          Send Message
+        </button>
+      </div>
     </form>
   </div>
+</section>
 
-  <!-- Footer -->
-  <div class="footer">
-    © 2025 LEAD Innovatory Workforce. Powered by AXA.
-  </div>
+<!-- Footer Section -->
+<footer style="background-color: #333; color: white; text-align: center; padding: 15px 10px; font-size: 14px;">
+  &copy; 2025 ILEAD Innovatory Workforce. Powered by AXA.
+</footer>
+
 
 </body>
 </html>
