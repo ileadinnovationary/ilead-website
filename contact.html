@@ -3,64 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Home - LEAD Innovatory Workforce</title>
   <style>
-    .button-link {
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .banner {
+      background-color: #0056a6;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .contact-button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
+      margin-top: 30px;
+      padding: 15px 30px;
       background-color: white;
       color: #0056a6;
-      text-decoration: none;
       font-weight: bold;
-      border-radius: 5px;
+      text-decoration: none;
+      border-radius: 8px;
       transition: background-color 0.3s, color 0.3s;
     }
-    .button-link:hover {
+    .contact-button:hover {
       background-color: #003d80;
       color: white;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
   <!-- Blue Banner Section -->
-  <section style="background-color: #0056a6; color: white; padding: 60px 20px; text-align: center;">
-    <h2 style="font-size: 32px; font-weight: bold;">Let's Build Your Future Together</h2>
-    <a href="#contact-form" class="button-link">Contact Us</a>
-  </section>
-
-  <!-- Contact Us Form Section -->
-  <section id="contact-form" style="background-color: #0056a6; padding: 60px 20px;">
-    <div style="max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 10px;">
-      <h2 style="text-align: center;">Contact Us</h2>
-      <p style="text-align: center;">Ready to take the next step? Let's connect.</p>
-      <form>
-        <div style="margin-bottom: 20px;">
-          <label for="name">Full Name</label><br>
-          <input type="text" id="name" name="name" style="width: 100%; padding: 10px; margin-top: 5px;">
-        </div>
-        <div style="margin-bottom: 20px;">
-          <label for="email">Email Address</label><br>
-          <input type="email" id="email" name="email" style="width: 100%; padding: 10px; margin-top: 5px;">
-        </div>
-        <div style="margin-bottom: 20px;">
-          <label for="message">Your Message</label><br>
-          <textarea id="message" name="message" rows="5" style="width: 100%; padding: 10px; margin-top: 5px;"></textarea>
-        </div>
-        <div style="text-align: center;">
-          <button type="submit" style="background-color: #0056a6; color: white; padding: 12px 30px; border: none; border-radius: 5px;">Send Message</button>
-        </div>
-      </form>
-    </div>
+  <section class="banner">
+    <h1>Let's Build Your Future Together</h1>
+    <a href="contact.html" class="contact-button">📞 Contact Us</a> <!-- Contact Us Button with Icon -->
   </section>
 
   <!-- Footer -->
-  <footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
+  <footer>
     &copy; 2025 LEAD Innovatory Workforce. Powered by AXA.
   </footer>
 
 </body>
 </html>
+
 
