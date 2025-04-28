@@ -1,180 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iLEAD Innovatory Workforce</title>
-  <style>
-    /* General Styles */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f7fa;
-      color: #333;
-    }
-
-    header {
-      background: #005baa;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    nav {
-      background: #6a5acd;
-      text-align: center;
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Hero Section */
-    .hero {
-      background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-      height: 80vh;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      padding: 0 20px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .hero a {
-      background: #005baa;
-      color: white;
-      padding: 12px 30px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    /* Features Section */
-    .features {
-      display: flex;
-      justify-content: space-around;
-      padding: 60px 20px;
-      background: #ffffff;
-    }
-
-    .feature {
-      text-align: center;
-      max-width: 300px;
-    }
-
-    .feature h3 {
-      color: #005baa;
-      margin-bottom: 15px;
-    }
-
-    /* Call to Action Section */
-    .cta {
-      background: #005baa;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .cta a {
-      background: #ffffff;
-      color: #005baa;
-      padding: 12px 30px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      background: #333;
-      color: #ccc;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      .features {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - LEAD Innovatory Workforce</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- Header -->
-  <header>
-    <h1>iLEAD Innovatory Workforce</h1>
-    <small>An AXA Business Unit</small>
-  </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- Navigation -->
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Unlock Your Workforce Potential</h1>
-    <p>Empowering Financial Innovation and Future-Ready Leadership</p>
-    <a href="#contact">Get in Touch</a>
-  </section>
+<!-- Hero Section -->
+<section class="banner">
+<h1>Welcome to LEAD Innovatory Workforce</h1>
+<a href="contact.html" class="contact-button">📞 Get in Touch</a>
+</section>
 
-  <!-- Features Section -->
-  <section class="features">
-    <div class="feature">
-      <h3>Workforce Innovation</h3>
-      <p>Strategic solutions designed to transform talent into leadership excellence.</p>
-    </div>
-    <div class="feature">
-      <h3>Financial Expertise</h3>
-      <p>Guiding organizations through dynamic financial landscapes with confidence.</p>
-    </div>
-    <div class="feature">
-      <h3>Customized Solutions</h3>
-      <p>Tailored strategies that fit your organization's unique growth ambitions.</p>
-    </div>
-  </section>
+<!-- Home Content -->
+<section style="text-align: center; padding: 50px 20px;">
+<h2>Our Mission</h2>
+<p>We are dedicated to building the future of work by connecting innovation and talent across industries.</p>
+</section>
 
-  <!-- Call to Action Section -->
-  <section class="cta">
-    <h2>Let's Build Your Future Together</h2>
-    <a href="#contact">Schedule a Consultation</a>
-  </section>
+<!-- About Section -->
+<section style="text-align: center; padding: 50px 20px; background: #ffffff;">
+<h2>About Us</h2>
+<p>At LEAD Innovatory Workforce, we believe in leading with innovation, empowering people, and delivering outstanding solutions to meet the evolving demands of the workforce.</p>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 iLEAD Innovatory Workforce. Powered by AXA.
-  </footer>
+<!-- Footer -->
+<footer>
+&copy; <span id="year"></span> LEAD Innovatory Workforce. Powered by AXA.
+</footer>
+
+<!-- Auto Year Script -->
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
 
