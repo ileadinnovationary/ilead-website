@@ -119,3 +119,24 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
 }
+/* Navbar Styles */
+nav {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #34d399, #6366f1);
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fffb73;
+  text-decoration: underline;
+}
