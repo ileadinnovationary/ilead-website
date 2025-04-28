@@ -81,7 +81,7 @@ nav ul li a:hover {
 }
 header {
   background: linear-gradient(90deg, #43cea2, #185a9d);
-  color: white;
+  color: blue;
   padding: 100px 20px;
   text-align: center;
 }
