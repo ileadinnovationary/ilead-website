@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us - ILead Innovationary Workforce</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact iLead</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav>
-<a href="index.html">Home</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
+    <header class="header">
+        <div class="logo">iLead</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Contact Section -->
-<section id="contact">
-<h2>Contact Us</h2>
-<p>Email: ileadinnovationary@gmail.com</p>
-<p>Phone: +63 961 558 2873</p>
-<p>Facebook: Gerry Orgasan Jr</p>
-<p>LinkedIn: German Jr Orgasan</p>
-</section>
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
 
-<!-- Footer -->
-<footer>
-<p>&copy; <span id="footer-year">2025</span> ILead Innovationary Workforce. Powered by AXA.</p>
-</footer>
+    <footer class="footer">
+        <p>&copy; 2025 iLead Innovationary Workforce. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
