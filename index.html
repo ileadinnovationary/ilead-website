@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body, html {
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('your-background-image.jpg') center/cover no-repeat;
-      height: 100vh;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-    .hero a {
-      background-color: #007BFF;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    .hero a:hover {
-      background-color: #0056b3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iLead Innovationary</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">iLead Innovationary</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Unlock Your Workforce Potential</h1>
+            <p>Empowering Innovation and Future-Ready Leadership</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </header>
 
-  <div class="hero">
-    <h1>Unlock Your Workforce Potential</h1>
-    <p>Empowering Innovation and Future-Ready Leadership</p>
-    <a href="#contact">Get in Touch</a>
-  </div>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We empower leaders and teams to innovate, adapt, and drive success in a rapidly changing world.</p>
+    </section>
 
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Innovation Training</h3>
+                <p>Workshops and coaching to unlock creative potential across your teams.</p>
+            </div>
+            <div class="card">
+                <h3>Leadership Development</h3>
+                <p>Building future-ready leaders who thrive in uncertainty and drive transformation.</p>
+            </div>
+            <div class="card">
+                <h3>Organizational Strategy</h3>
+                <p>Consulting services to align innovation with your business strategy for sustainable growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to lead the future? Let's connect!</p>
+        <a href="contact.html" class="btn">Send a Message</a>
+    </section>
+
+    <footer>
+        <p>© 2025 iLead Innovationary. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
