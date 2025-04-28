@@ -232,14 +232,22 @@ button:hover {
     transform: translateY(0);
   }
 /* Apply the animation to the hero section */
-.hero {
+.hero 
+{
   text-align: center;
-  padding: 80px 20px;
-  background: #f9fafb;
-  color: #1f2937;
+  padding: 50px 20px;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
   font-family: 'Arial', sans-serif;
-  
+  }
   /* new animation properties */
   animation: fadeIn 1.5s ease-out forwards;
+}
+.subtitle {
+  font-size: 20px; /* ← You can make this even bigger like 24px if you want */
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: white; /* make it white if you want better contrast */
 }
 
