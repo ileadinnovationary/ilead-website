@@ -1,3 +1,38 @@
+/* Reset some default styles */
+body, h1, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+}
+
+/* Full-width navigation bar */
+nav {
+  background: linear-gradient(to right, #34d399, #6366f1);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  gap: 2rem; /* Adjust space between links */
+  max-width: 600px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Center the title */
+header {
+  text-align: center;
+  margin-top: 20px;
+}
 /* Fresh, Modern, and Colorful Style */
 
 /* Reset */
