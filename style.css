@@ -1,358 +1,94 @@
-/* Reset some default styles */
-body, h1, a {
-  margin: 1;
-  padding: 1;
-  text-decoration: none;
-  color: white;
-}
-
-/* Full-width navigation bar */
-nav {
-  background: linear-gradient(to right, #34d399, #6366f1);
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-}
-
-/* Navigation links container */
-.nav-links {
-  display: flex;
-  gap: 5rem; /* Adjust space between links */
-  max-width: 400px;
-  width: 850%;
-  justify-content: center;
-}
-
-/* Hover effect */
-.nav-links a:hover {
-  text-decoration: underline;
-}
-
-/* Center the title */
-header {
- header:first-of-type {
-  display: none;
-}
- text-align: center;
-  margin-top: 20px;
-}
-/* Fresh, Modern, and Colorful Style */
-
-/* Reset */
+/* Reset and Base Styles */
 * {
-  margin: 1;
-  padding: 1;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 body {
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-}
-nav {
-  background: linear-gradient(90deg, #4e54c8, #8f94fb);
-  padding: 1rem;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  min-height: 100vh;
   display: flex;
-  nav {
-  ...
+  flex-direction: column;
+}
+
+/* Navigation */
+nav {
+  background: linear-gradient(to right, #34d399, #6366f1);
+  display: flex;
   justify-content: center;
-  gap: 7rem; /* add spacing between Home, About, Contact */
-}
- align-items: center;
-}
-nav .logo {
- nav a {
-
-}
- font-size: 18px; /* or 20px if you want it even bigger */
-  font-weight: bold; /* (optional) keeps the bold look */
-}
-nav ul {
-  list-style: none;
-  display: flex;
-}
-nav ul li {
-  margin-left: 15px;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-nav ul li a:hover {
-  color: #ffd166;
-}
-header {
-  background: linear-gradient(90deg, #43cea2, #185a9d);
-  color: blue;
-  padding: 100px 20px;
-  text-align: center;
-}
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-header p {
-  font-size: 1.0rem;
-}
-section {
-  padding: 56px 18px;
-  text-align: center;
-}
-section h2 {
-  font-size: 2rem;
-  color: #444;
-  margin-bottom: 18px;
-}
-section p {
-  font-size: 1rem;
-  color: #666;
-  max-width: 550px;
-  margin: auto;
-}
-
-.contact-form {
-  margin-top: 28px;
-}
-.contact-form input,
-.contact-form textarea {
-  width: 260px;
-  padding: 8px;
-  margin: 8px;
-  border: none;
-  border-radius: 6px;
-  outline: none;
-}
-.contact-form button {
-  background: #4e54c8;
-  color: white;
-  border: none;
-  padding: 10px 28px;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-.contact-form button:hover {
-  background: #8f94fb;
-}
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-  font-size: 0.9rem;
-}
-/* Navbar Styles */
-nav {
+  align-items: center;
+  gap: 7rem;
+  padding: 1rem;
   position: sticky;
   top: 0;
-  background: linear-gradient(to right, #34d399, #6366f1);
-  padding: 10px 20px;
   z-index: 1000;
 }
+
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
+
 nav a:hover {
   color: #fffb73;
   text-decoration: underline;
 }
-/* Section Styling */
-section {
-  padding: 80px 20px;
-  text-align: center;
-}
-/* Specific Backgrounds */
-#home {
-  background: #f9fafb;
-}
-#about {
-  background: #ffffff;
-}
-#contact {
-  background: #f9fafb;
-}
-/* Contact Form Styling */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-input, textarea {
-  width: 100%;
-max-width: 400px;
-padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
-}
-button {
-  background-color: #6366f1;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-button:hover {
-  background-color: #4f46e5;
-}
- /****** your existing styles for nav etc... ******/
 
-/* Now add the new hero section styling */
-.hero {
+/* Hero Banner */
+.banner {
+  background-color: #0056a6;
+  color: white;
   text-align: center;
-  padding: 80px 20px;
-  background: none
-  color: none
-  font-family: 'Arial', sans-serif;
-  max-width: 800px; /* Control the width */
-  margin: 0 auto; /* Center the section */
+  padding: 100px 20px;
+  animation: fadeIn 1.5s ease-out forwards;
 }
-.hero h2 {
-  font-size: 32px;
-  font-weight: 700;
+
+.banner h1 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
-/* Fade-in animation */
+
+/* Button */
+.contact-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: white;
+  color: #0056a6;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #003d80;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px); /* slightly move up while fading in */
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
-/* Apply the animation to the hero section */
-.hero 
-{
-  text-align: center;
-  padding: 50px 20px;
-  color: white;
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: 'Arial', sans-serif;
-  }
-  /* new animation properties */
-  animation: fadeIn 1.5s ease-out forwards;
-}
-.subtitle {
-  font-size: 1.25rem; /* or bigger like 1.5rem */
-  font-weight: 500;
-  margin-bottom: 10px;
-  color: white; /* make it white if you want better contrast */
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 20px;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #e0eafc, #cfdef3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-section {
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  max-width: 700px;
-  width: 100%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  animation: floatIn 1s ease-out forwards;
-  opacity: 0;
-}
-
-@keyframes floatIn {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.contact-section h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2.5em;
-  color: #333;
-}
-
-.images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-.images img {
-  width: 80px;
-  height: 80px;
-  margin: 10px;
-  border-radius: 15px;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.images img:hover {
-  transform: scale(1.15);
-  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form input,
-form textarea {
-  padding: 15px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-size: 1em;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-form input:focus,
-form textarea:focus {
-  border-color: #007BFF;
-  box-shadow: 0 0 8px #007BFF;
-  outline: none;
-}
-
-form button {
-  padding: 15px;
-  background: linear-gradient(135deg, #007BFF, #00C6FF);
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 1.2em;
-  cursor: pointer;
-  margin-top: 15px;
-  transition: background 0.4s ease, transform 0.3s ease;
-}
-
-form button:hover {
-  background: linear-gradient(135deg, #0056b3, #0088cc);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
 }
 
