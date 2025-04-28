@@ -30,7 +30,10 @@ nav {
 
 /* Center the title */
 header {
-  text-align: center;
+ header:first-of-type {
+  display: none;
+}
+ text-align: center;
   margin-top: 20px;
 }
 /* Fresh, Modern, and Colorful Style */
