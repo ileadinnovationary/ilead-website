@@ -60,16 +60,7 @@ nav {
 }
 nav .logo {
  nav a {
- header nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: white; /* or any color you prefer */
-  font-weight: bold;
-  font-size: 18px; /* makes it a little bigger */
-}
 
-header nav {
-  margin-top: 20px; /* space between the heading and the links */
 }
  font-size: 18px; /* or 20px if you want it even bigger */
   font-weight: bold; /* (optional) keeps the bold look */
