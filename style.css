@@ -208,8 +208,8 @@ button:hover {
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: #f9fafb; /* Light background */
-  color: #1f2937; /* Darker text */
+  background: none
+  color: none
   font-family: 'Arial', sans-serif;
   max-width: 800px; /* Control the width */
   margin: 0 auto; /* Center the section */
@@ -243,7 +243,7 @@ button:hover {
   animation: fadeIn 1.5s ease-out forwards;
 }
 .subtitle {
-  font-size: 20px; /* ← You can make this even bigger like 24px if you want */
+  font-size: 30px; /* ← You can make this even bigger like 24px if you want */
   font-weight: 500;
   margin-bottom: 10px;
   color: white; /* make it white if you want better contrast */
